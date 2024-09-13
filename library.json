@@ -1,0 +1,34 @@
+{
+    "name": "GuruxDLMS",
+    "version": "1.0.0",
+    "description": "GuruxDLMS library for DLMS/COSEM communication.",
+    "keywords": "Gurux, DLMS, COSEM, HDLC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/latonita/GuruxDLMS.c.platformio.git"
+    },
+    "authors": [
+        {
+            "name": "Gurux.fi",
+            "maintainer": true
+        }
+    ],
+    "license": "GPL-2.0",
+    "frameworks": "*",
+    "platforms": "*",
+    "export": {
+        "include": [
+            "development/src/*.h",
+            "development/include/*.c"
+        ]
+    },
+    "build": {
+        "flags": [
+            "-Idevelopment/include"
+        ],
+        "srcFilter": [
+            "+<development/src/*.c>",
+            "+<development/include/*.h>"
+        ]
+    }
+}
