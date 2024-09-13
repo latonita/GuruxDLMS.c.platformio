@@ -200,14 +200,14 @@ extern "C" {
 #ifdef ARDUINO
 /////////////////////////////////////////////////////////////////////////////
 //If Arduino is used.
-#include "../ArduinoIgnore.h"
+//#include "../ArduinoIgnore.h"
 /////////////////////////////////////////////////////////////////////////////
 #endif //ARDUINO
 
 #ifdef ARDUINO_ARCH_AVR
 /////////////////////////////////////////////////////////////////////////////
 //If Arduino is used.
-#include "../ArduinoIgnore.h"
+//#include "../ArduinoIgnore.h"
 #define DLMS_IGNORE_IP6_SETUP
 #define DLMS_USE_EPOCH_TIME
 #define DLMS_IGNORE_NOTIFY
@@ -222,7 +222,7 @@ extern "C" {
 #ifdef ARDUINO_ARCH_ESP32
 /////////////////////////////////////////////////////////////////////////////
 //If Arduino ESP32 is used.
-#include "../ArduinoIgnore.h"
+//#include "../ArduinoIgnore.h"
 #define DLMS_IGNORE_IP6_SETUP
 #define DLMS_USE_EPOCH_TIME
 #define DLMS_IGNORE_NOTIFY
@@ -236,7 +236,7 @@ extern "C" {
 #ifdef ARDUINO_ARCH_ESP8266
 /////////////////////////////////////////////////////////////////////////////
 //If Arduino ESP is used.
-#include "../ArduinoIgnore.h"
+//#include "../ArduinoIgnore.h"
 #define ESP_PLATFORM
 #define DLMS_IGNORE_IP6_SETUP
 #define DLMS_USE_EPOCH_TIME
