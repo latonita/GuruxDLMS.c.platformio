@@ -5,7 +5,7 @@
     "keywords": "Gurux, DLMS, COSEM, HDLC",
     "repository": {
         "type": "git",
-        "url": "https://github.com/latonita/GuruxDLMS.c.platformio.git"
+        "url": "https://github.com/latonita/GuruxDLMS.c.platformio"
     },
     "authors": [
         {
@@ -18,17 +18,16 @@
     "platforms": "*",
     "export": {
         "include": [
-            "development/src/*.h",
-            "development/include/*.c"
+            "development/src/*.c",
+            "development/include/*.h"
         ]
     },
     "build": {
-        "flags": [
-            "-Idevelopment/include"
-        ],
         "srcFilter": [
             "+<development/src/*.c>",
             "+<development/include/*.h>"
+        ],
+        "flags": [
+            "-Idevelopment/include"
         ]
-    }
-}
+}}
